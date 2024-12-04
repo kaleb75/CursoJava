@@ -1,0 +1,493 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Curso básico de Java para principiantes. Aprende conceptos fundamentales de Java de manera práctica y sencilla.">
+  <meta name="author" content="TuNombre">
+  <title>Curso de Java</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+  
+</head>
+<body>
+<!-- Navbar -->
+<nav class="navbar">
+    <div class="container">
+      <a href="#" class="navbar-brand">Curso de Java</a>
+      <button class="navbar-toggler" id="toggle-menu">
+        ☰
+      </button>
+      <div class="navbar-menu" id="navbar-menu">
+        <a href="#intro" class="nav-link">Introducción</a>
+        <a href="#conceptos-basicos" class="nav-link">Conceptos Básicos</a>
+        <a href="#estructuras-control" class="nav-link">Estructuras de Control</a>
+        <a href="#poo" class="nav-link">POO</a>
+        <a href="#proyectos" class="nav-link">Proyectos</a>
+      </div>
+    </div>
+  </nav>
+  
+
+  <!-- Contenedor principal -->
+  <div class="container" id="java-curso">
+    <!-- Sección de Introducción -->
+    <section id="intro">
+      <h1>Bienvenido al Curso de Java</h1>
+      <p>Este curso está diseñado para que aprendas Java desde cero. Incluye ejemplos prácticos y explicaciones detalladas para que puedas empezar a programar.</p>
+    </section>
+
+    <!-- Sección de Conceptos Básicos -->
+    <section id="conceptos-basicos">
+      <h2>Conceptos Básicos</h2>
+      <p>En esta sección aprenderás los fundamentos de Java, como la estructura básica de un programa, variables, tipos de datos y operadores.</p>
+      
+      <!-- Código de ejemplo con documentación -->
+      <h3>Estructura básica de un programa Java</h3>
+      <pre>
+        <code>
+/*
+ * Este es un programa básico en Java.
+ * Siempre comienza con la definición de una clase pública.
+ */
+public class HolaMundo {
+
+    // El método main es el punto de entrada del programa.
+    public static void main(String[] args) {
+        // Este comando imprime un mensaje en la consola.
+        System.out.println("¡Hola, Mundo!");
+    }
+}
+        </code>
+      </pre>
+      <p><strong>Explicación del código:</strong></p>
+      <ul>
+        <li><code>public class HolaMundo</code>: Define una clase llamada HolaMundo. En Java, todo el código debe estar dentro de una clase.</li>
+        <li><code>public static void main(String[] args)</code>: Este es el método principal donde comienza la ejecución del programa.</li>
+        <li><code>System.out.println("¡Hola, Mundo!");</code>: Imprime el texto "¡Hola, Mundo!" en la consola.</li>
+      </ul>
+    </section>
+
+    <!-- Sección de Estructuras de Control -->
+    <section id="estructuras-control">
+      <h2>Estructuras de Control</h2>
+      <p>En Java, puedes controlar el flujo de tu programa con estructuras como condicionales y bucles.</p>
+
+      <!-- Código de ejemplo con documentación -->
+      <h3>Ejemplo de condicional <code>if</code></h3>
+      <pre>
+        <code>
+/*
+ * Este programa evalúa si un número es mayor que 10.
+ */
+public class EjemploIf {
+    public static void main(String[] args) {
+        int numero = 15; // Declaración de una variable de tipo entero
+
+        // Condicional if para verificar si el número es mayor que 10
+        if (numero > 10) {
+            System.out.println("El número es mayor que 10.");
+        } else {
+            System.out.println("El número no es mayor que 10.");
+        }
+    }
+}
+        </code>
+      </pre>
+      <p><strong>Explicación del código:</strong></p>
+      <ul>
+        <li><code>int numero = 15;</code>: Declara una variable llamada <code>numero</code> y le asigna el valor 15.</li>
+        <li><code>if (numero > 10)</code>: Verifica si el valor de <code>numero</code> es mayor que 10.</li>
+        <li><code>System.out.println(...)</code>: Imprime un mensaje según el resultado de la condición.</li>
+      </ul>
+    </section>
+      
+          <!-- Programación Orientada a Objetos -->
+          <section id="poo">
+            <h2>Programación Orientada a Objetos (POO)</h2>
+            <p>La Programación Orientada a Objetos (POO) es un paradigma que organiza el código en **clases** y **objetos**, permitiendo modelar problemas del mundo real de forma más intuitiva.</p>
+            
+            <nav>
+              <ul>
+                <li><a href="#conceptos-poo">Conceptos Clave de POO</a></li>
+                <li><a href="#clases-y-objetos">Clases y Objetos</a></li>
+                <li><a href="#herencia">Herencia</a></li>
+                <li><a href="#polimorfismo">Polimorfismo</a></li>
+                <li><a href="#interfaces">Interfaces</a></li>
+              </ul>
+            </nav>
+      
+            <!-- Conceptos clave -->
+            <article id="conceptos-poo">
+              <h3>Conceptos Clave de POO</h3>
+              <p>POO se basa en cuatro principios fundamentales:</p>
+              <ol>
+                <li>
+                  <strong>Clases y Objetos:</strong> 
+                  Una clase es un plano o plantilla que define las características y comportamientos de un objeto. Un objeto es una instancia concreta de esa clase.
+                </li>
+                <li>
+                  <strong>Encapsulación:</strong>
+                  Consiste en ocultar los detalles internos de una clase y exponer únicamente lo necesario. Esto se logra utilizando modificadores de acceso como <code>private</code>, <code>public</code>, y <code>protected</code>.
+                </li>
+                <li>
+                  <strong>Herencia:</strong>
+                  Permite que una clase (hija) adquiera propiedades y métodos de otra clase (padre). Esto fomenta la reutilización de código.
+                </li>
+                <li>
+                  <strong>Polimorfismo:</strong>
+                  La capacidad de un método o clase de comportarse de diferentes maneras dependiendo del contexto.
+                </li>
+              </ol>
+            </article>
+      
+            <!-- Clases y Objetos -->
+            <article id="clases-y-objetos">
+              <h3>Clases y Objetos</h3>
+              <p>Las clases y los objetos son los pilares fundamentales de POO. Una clase define un conjunto de atributos (datos) y métodos (acciones), mientras que un objeto es una instancia que utiliza esos atributos y métodos.</p>
+              <pre>
+                <code>
+      /*
+       * Clase que representa a una persona.
+       */
+      public class Persona {
+          // Atributos de la clase
+          String nombre;
+          int edad;
+      
+          // Método para mostrar información
+          public void mostrarInfo() {
+              System.out.println("Nombre: " + nombre);
+              System.out.println("Edad: " + edad);
+          }
+      }
+      
+      public class Main {
+          public static void main(String[] args) {
+              // Creación de un objeto de la clase Persona
+              Persona persona1 = new Persona();
+              
+              // Asignación de valores a los atributos
+              persona1.nombre = "Juan";
+              persona1.edad = 30;
+      
+              // Llamada al método de la clase
+              persona1.mostrarInfo();
+          }
+      }
+                </code>
+              </pre>
+              <p><strong>Explicación:</strong></p>
+              <ul>
+                <li><code>public class Persona</code>: Define una clase llamada <code>Persona</code> con atributos y métodos.</li>
+                <li><code>Persona persona1 = new Persona();</code>: Crea un objeto llamado <code>persona1</code> de tipo <code>Persona</code>.</li>
+                <li><code>persona1.nombre = "Juan";</code>: Asigna el valor "Juan" al atributo <code>nombre</code> del objeto.</li>
+                <li><code>persona1.mostrarInfo();</code>: Llama al método para imprimir la información de la persona.</li>
+              </ul>
+            </article>
+      
+            <!-- Herencia -->
+            <article id="herencia">
+              <h3>Herencia</h3>
+              <p>La herencia permite que una clase reutilice atributos y métodos de otra clase. Esto fomenta la reutilización de código y reduce redundancias.</p>
+              <pre>
+                <code>
+      /*
+       * Clase base o superclase Animal.
+       */
+      public class Animal {
+          String nombre;
+      
+          public void hacerSonido() {
+              System.out.println("El animal hace un sonido.");
+          }
+      }
+      
+      /*
+       * Clase Perro que hereda de Animal.
+       */
+      public class Perro extends Animal {
+          public void hacerSonido() {
+              System.out.println("El perro ladra.");
+          }
+      }
+      
+      public class Main {
+          public static void main(String[] args) {
+              // Crear un objeto de la clase Perro
+              Perro miPerro = new Perro();
+              miPerro.nombre = "Rex";
+              miPerro.hacerSonido();  // Salida: El perro ladra.
+          }
+      }
+                </code>
+              </pre>
+              <p><strong>Explicación:</strong></p>
+              <ul>
+                <li><code>public class Animal</code>: Clase base que define un atributo y un método genérico.</li>
+                <li><code>public class Perro extends Animal</code>: Clase que hereda de <code>Animal</code> y sobrescribe el método <code>hacerSonido</code>.</li>
+                <li><code>miPerro.hacerSonido()</code>: Llama al método sobrescrito en la clase <code>Perro</code>.</li>
+              </ul>
+            </article>
+      
+            <!-- Polimorfismo -->
+            <article id="polimorfismo">
+              <h3>Polimorfismo</h3>
+              <p>El polimorfismo permite que un objeto adopte diferentes formas dependiendo del contexto. Por ejemplo, un método puede comportarse de manera distinta en función de la clase que lo implemente.</p>
+              <pre>
+                <code>
+      /*
+       * Clase base o superclase Figura.
+       */
+      public class Figura {
+          public void dibujar() {
+              System.out.println("Dibujando una figura genérica.");
+          }
+      }
+      
+      /*
+       * Subclase para Círculo.
+       */
+      public class Circulo extends Figura {
+          public void dibujar() {
+              System.out.println("Dibujando un círculo.");
+          }
+      }
+      
+      /*
+       * Subclase para Cuadrado.
+       */
+      public class Cuadrado extends Figura {
+          public void dibujar() {
+              System.out.println("Dibujando un cuadrado.");
+          }
+      }
+      
+      public class Main {
+          public static void main(String[] args) {
+              Figura figura1 = new Circulo();
+              Figura figura2 = new Cuadrado();
+      
+              figura1.dibujar();  // Salida: Dibujando un círculo.
+              figura2.dibujar();  // Salida: Dibujando un cuadrado.
+          }
+      }
+                </code>
+              </pre>
+              <p><strong>Explicación:</strong></p>
+              <ul>
+                <li><code>Figura figura1 = new Circulo();</code>: Declara un objeto de tipo <code>Figura</code>, pero asigna una instancia de <code>Circulo</code>.</li>
+                <li><code>figura1.dibujar();</code>: Llama al método <code>dibujar</code>, que se comporta según la implementación en <code>Circulo</code>.</li>
+              </ul>
+            </article>
+     
+          /*
+           * Este es un programa básico en Java.
+           * Siempre comienza con la definición de una clase pública.
+           */
+          public class HolaMundo {
+          
+              // El método main es el punto de entrada del programa.
+              public static void main(String[] args) {
+                  // Este comando imprime un mensaje en la consola.
+                  System.out.println("¡Hola, Mundo!");
+              }
+          }
+                  </code>
+                </pre>
+                <p><strong>Explicación del código:</strong></p>
+                <ul>
+                  <li><code>public class HolaMundo</code>: Define una clase llamada HolaMundo. En Java, todo el código debe estar dentro de una clase.</li>
+                  <li><code>public static void main(String[] args)</code>: Este es el método principal donde comienza la ejecución del programa.</li>
+                  <li><code>System.out.println("¡Hola, Mundo!");</code>: Imprime el texto "¡Hola, Mundo!" en la consola.</li>
+                </ul>
+              </section>
+          
+              <!-- Sección de Estructuras de Control -->
+              <section id="estructuras-control">
+                <h2>Estructuras de Control</h2>
+                <p>En Java, puedes controlar el flujo de tu programa con estructuras como condicionales y bucles.</p>
+          
+                <!-- Código de ejemplo con documentación -->
+                <h3>Ejemplo de condicional <code>if</code></h3>
+                <pre>
+                  <code>
+          /*
+           * Este programa evalúa si un número es mayor que 10.
+           */
+          public class EjemploIf {
+              public static void main(String[] args) {
+                  int numero = 15; // Declaración de una variable de tipo entero
+          
+                  // Condicional if para verificar si el número es mayor que 10
+                  if (numero > 10) {
+                      System.out.println("El número es mayor que 10.");
+                  } else {
+                      System.out.println("El número no es mayor que 10.");
+                  }
+              }
+          }
+                  </code>
+                </pre>
+              </section>
+          
+              <section id="proyectos">
+                <h2>Proyectos: Java + Eclipse + MySQL</h2>
+                <p>En esta sección aprenderás a desarrollar un proyecto completo combinando **Java**, **Eclipse IDE**, y **MySQL**. El objetivo es crear un **Sistema de Gestión de Usuarios** con operaciones CRUD (Crear, Leer, Actualizar, Eliminar).</p>
+                
+                <p>¿Prefieres aprender con un video? Aquí tienes una guía visual que cubre muchos de estos pasos: 
+                  <a href="https://youtu.be/zz9vG4tdB2U?si=JaRFuHDdEHzYamFH" target="_blank">Ver Video Tutorial</a>.
+                </p>
+              
+                <!-- Instalación y Configuración -->
+                <h3>1. Instalación y Configuración</h3>
+                <p>Asegúrate de instalar las herramientas necesarias:</p>
+                <ul>
+                  <li>
+                    <strong>Java Development Kit (JDK):</strong> 
+                    <a href="https://www.oracle.com/java/technologies/javase-downloads.html" target="_blank">Descargar</a>. 
+                    Instala la versión más reciente y configura la variable de entorno <code>JAVA_HOME</code>.
+                  </li>
+                  <li>
+                    <strong>Eclipse IDE:</strong> 
+                    <a href="https://www.eclipse.org/downloads/" target="_blank">Descargar Eclipse</a>. 
+                    Usa la edición para desarrolladores Java.
+                  </li>
+                  <li>
+                    <strong>MySQL Server y MySQL Workbench:</strong> 
+                    <a href="https://dev.mysql.com/downloads/" target="_blank">Descargar</a>. 
+                    Configura un usuario y contraseña para el servidor.
+                  </li>
+                  <li>
+                    <strong>MySQL Connector (JDBC):</strong> 
+                    <a href="https://dev.mysql.com/downloads/connector/j/" target="_blank">Descargar</a>. 
+                    Este archivo JAR es esencial para conectar Java con MySQL.
+                  </li>
+                </ul>
+              
+                <p><strong>Consejo:</strong> Asegúrate de que tu servidor MySQL esté en ejecución antes de continuar.</p>
+              
+                <!-- Crear la Base de Datos -->
+                <h3>2. Crear la Base de Datos</h3>
+                <p>Usa el siguiente script SQL en **MySQL Workbench** para crear la base de datos y su estructura:</p>
+                <pre>
+                  <code>
+              -- Crear la base de datos
+              CREATE DATABASE sistema_usuarios;
+              
+              -- Seleccionar la base de datos
+              USE sistema_usuarios;
+              
+              -- Crear la tabla usuarios
+              CREATE TABLE usuarios (
+                  id INT AUTO_INCREMENT PRIMARY KEY,
+                  nombre VARCHAR(50) NOT NULL,
+                  correo VARCHAR(100) NOT NULL,
+                  edad INT NOT NULL
+              );
+                  </code>
+                </pre>
+                <p>Este script crea una base de datos llamada <code>sistema_usuarios</code> y una tabla <code>usuarios</code> con los campos necesarios.</p>
+              
+                <!-- Configurar el Proyecto en Eclipse -->
+                <h3>3. Configurar el Proyecto en Eclipse</h3>
+                <ol>
+                  <li>
+                    Abre Eclipse y crea un proyecto Java: 
+                    <strong>File > New > Java Project</strong>.
+                  </li>
+                  <li>
+                    Agrega el conector de MySQL (JDBC) al proyecto:
+                    <ol>
+                      <li>Haz clic derecho en tu proyecto, selecciona <strong>Build Path > Add External Archives</strong>.</li>
+                      <li>Selecciona el archivo JAR del conector descargado previamente.</li>
+                    </ol>
+                  </li>
+                  <li>
+                    Crea una nueva clase Java para manejar la conexión con la base de datos. Por ejemplo, <code>SistemaUsuarios</code>.
+                  </li>
+                </ol>
+              
+                <!-- Código Java -->
+                <h3>4. Código Java</h3>
+                <p>Utiliza este código para conectar Java con MySQL y realizar operaciones CRUD:</p>
+                <pre>
+                  <code>
+              import java.sql.*;
+              
+              public class SistemaUsuarios {
+                  // Datos de conexión
+                  private static final String URL = "jdbc:mysql://localhost:3306/sistema_usuarios";
+                  private static final String USER = "root"; // Cambia por tu usuario
+                  private static final String PASSWORD = ""; // Cambia por tu contraseña
+              
+                  public static void main(String[] args) {
+                      try (Connection conn = DriverManager.getConnection(URL, USER, PASSWORD)) {
+                          System.out.println("Conexión exitosa a la base de datos.");
+              
+                          // Insertar usuario
+                          String insertQuery = "INSERT INTO usuarios (nombre, correo, edad) VALUES (?, ?, ?)";
+                          try (PreparedStatement ps = conn.prepareStatement(insertQuery)) {
+                              ps.setString(1, "Juan Pérez");
+                              ps.setString(2, "juan.perez@mail.com");
+                              ps.setInt(3, 28);
+                              ps.executeUpdate();
+                              System.out.println("Usuario insertado con éxito.");
+                          }
+              
+                          // Leer usuarios
+                          String selectQuery = "SELECT * FROM usuarios";
+                          try (Statement stmt = conn.createStatement();
+                               ResultSet rs = stmt.executeQuery(selectQuery)) {
+                              System.out.println("Usuarios registrados:");
+                              while (rs.next()) {
+                                  System.out.printf("ID: %d, Nombre: %s, Correo: %s, Edad: %d%n",
+                                          rs.getInt("id"), rs.getString("nombre"),
+                                          rs.getString("correo"), rs.getInt("edad"));
+                              }
+                          }
+              
+                      } catch (SQLException e) {
+                          e.printStackTrace();
+                      }
+                  }
+              }
+                  </code>
+                </pre>
+              
+                <!-- Explicación del Código -->
+                <h3>5. Explicación del Código</h3>
+                <ul>
+                  <li><strong>DriverManager.getConnection:</strong> Establece la conexión con la base de datos usando la URL, usuario y contraseña.</li>
+                  <li><strong>PreparedStatement:</strong> Ejecuta consultas parametrizadas, como insertar datos en la tabla <code>usuarios</code>.</li>
+                  <li><strong>Statement:</strong> Permite ejecutar consultas simples, como leer datos.</li>
+                  <li><strong>try-with-resources:</strong> Cierra automáticamente recursos como conexiones y declaraciones.</li>
+                </ul>
+              
+                <!-- Mejora del Proyecto -->
+                <h3>6. Mejoras Futuras</h3>
+                <ul>
+                  <li>Agregar una interfaz gráfica con **JavaFX** o **Swing**.</li>
+                  <li>Implementar más funciones, como editar y eliminar usuarios.</li>
+                  <li>Validar los datos antes de interactuar con la base de datos.</li>
+                  <li>Crear logs de actividad para auditar los cambios realizados en la base de datos.</li>
+                  <li>Configurar un archivo de propiedades para manejar la conexión a la base de datos.</li>
+                </ul>
+              
+                <!-- Recursos Adicionales -->
+                <h3>7. Recursos Adicionales</h3>
+                <ul>
+                  <li><a href="https://docs.oracle.com/javase/tutorial/" target="_blank">Tutorial Oficial de Java</a></li>
+                  <li><a href="https://www.eclipse.org/documentation/" target="_blank">Documentación de Eclipse</a></li>
+                  <li><a href="https://dev.mysql.com/doc/" target="_blank">Documentación de MySQL</a></li>
+                </ul>
+              </section>
+              
+            </div>
+          
+            <!-- Footer -->
+            <footer>
+              <p>&copy; 2023 TuNombre. Todos los derechos reservados.</p>
+            </footer>
+          </body>
+          </html>
